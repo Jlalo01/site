@@ -1,0 +1,34 @@
+.header_padding {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 5%;
+    background-color: transparent;
+}
+
+.home-button{
+    cursor: pointer;
+    font-family: Gopher;
+    font-size: 30px;
+    display: inline;
+    padding-right: 10%;
+    transition: font-size 0.25s ease-out;
+}
+
+
+.nav-button {
+    display: inline;
+    cursor: pointer;
+    font-family: Space Mono;
+    padding-right: 3%;
+    padding-top: 1%;
+    float: right;
+    transition: font-size 0.25s ease-out;
+    color: white;
+}
+
+.nav-button:hover{
+    font-size: larger;
+    transition: font-size 0.25s ease-out;
+    color: white;
+}

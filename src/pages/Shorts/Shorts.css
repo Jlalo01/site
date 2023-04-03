@@ -1,0 +1,39 @@
+.page_padding{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+.shorts_row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.short_block{
+    float: left;
+    width: 50%;
+    padding-bottom: 2%;
+}
+
+.date{
+    padding-top: 2%;
+    font-family: Space Mono;
+}
+
+.title{
+    font-family: Gopher;
+    font-style: italic;
+    font-size: 200%;
+}
+
+.more-info{
+    font-family: Space Mono;
+    font-size: 95%;
+    color: var(--aqua-color);
+    text-decoration: none;
+}
+
+.more-info:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+.page_padding {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color: transparent;
+}
+
+.home_title {
+    font-family: Gopher;
+    font-size: 500%;
+    color:white;
+}
+
+.home_name {
+    font-family: Space Mono;
+    color: var(--black-color);
+    font-size: 150%;
+}

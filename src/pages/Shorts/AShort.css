@@ -1,0 +1,26 @@
+.page_padding{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+.title_ashort{
+    font-family: Gopher;
+    font-size: 400%;
+    color: var(--aqua-color);
+}
+
+.synopsis_ashort{
+    padding: 2%;
+    font-family: Space Mono;
+    font-size: 150%;
+    color: var(--aqua-color);
+}
+
+.info_ashort{
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: Space Mono;
+    font-size: 150%;
+    color: var(--black-color);
+}
