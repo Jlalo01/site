@@ -20,3 +20,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Gopher";
+  src: local("Gopher"),
+  url("./fonts/Gopher-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gopher";
+  src: local("Gopher"),
+  url("./fonts/Gopher-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Gopher";
+  src: local("Gopher"),
+  url("./fonts/Gopher-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: local("Space Mono"),
+  url("./fonts/SpaceMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: local("Space Mono"),
+  url("./fonts/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: local("Space Mono"),
+  url("./fonts/SpaceMono-Italic.ttf") format("truetype");
+  font-style: italic;
+}

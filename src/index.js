@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { disableReactDevTools } from '@fvilers/disable-react-devtools';
+import './fonts/Gopher-Bold.ttf';
+import './fonts/Gopher-Italic.ttf';
+import './fonts/Gopher-Regular.ttf';
+import './fonts/SpaceMono-Regular.ttf';
+import './fonts/SpaceMono-Bold.ttf';
+import './fonts/SpaceMono-Italic.ttf';
 
 if (process.env.NODE_ENV === 'production') disableReactDevTools();
 
