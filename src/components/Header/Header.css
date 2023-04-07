@@ -9,12 +9,10 @@
 .home-button{
     cursor: pointer;
     font-family: Gopher;
-    font-size: 30px;
     display: inline;
     padding-right: 10%;
     transition: font-size 0.25s ease-out;
 }
-
 
 .nav-button {
     display: inline;
@@ -28,7 +26,45 @@
 }
 
 .nav-button:hover{
-    font-size: larger;
     transition: font-size 0.25s ease-out;
     color: white;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .home-button{
+        font-size: 2vw;
+    }
+    .nav-button{
+        font-size: 1vw;
+    }
+    .nav-button:hover{
+        font-size: 1.25vw;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .home-button{
+        font-size: 3vw;
+    }
+
+    .nav-button{
+        font-size: 1.5vw;
+    }
+    .nav-button:hover{
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .home-button{
+        font-size: 3.5vw;
+    }
+
+    .nav-button{
+        font-size: 2vw;
+    }
+    .nav-button:hover{
+        font-size: 2.25vw;
+    }
 }
