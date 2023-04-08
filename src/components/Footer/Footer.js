@@ -24,7 +24,7 @@ const Footer = () =>{
                 </div>
                 <div className='info-column'>
                     <div className='info-name_title'>Joey Lalo</div>
-                    <div className='info_else'>Website Developed by Joey Lalo</div>
+                    <div className='info_else'>Developed & Designed by Joey Lalo</div>
                 </div>
             </div>
         </div>
