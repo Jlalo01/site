@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className='page_padding'>
             <div className='home_title'>Latest Work</div>
-            <Video link='https://www.youtube.com/embed/pJMBOc4qrXE'/>
+            <Video link='https://www.youtube.com/embed/pJMBOc4qrXE' size='normal' />
             <div className='home_name'>Manchester: The Meet</div>
         </div>
     );

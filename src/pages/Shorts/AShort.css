@@ -13,7 +13,6 @@
 .synopsis_ashort{
     padding: 2%;
     font-family: Space Mono;
-    font-size: 150%;
     color: var(--aqua-color);
 }
 
@@ -21,6 +20,42 @@
     padding-left: 2%;
     padding-right: 2%;
     font-family: Space Mono;
-    font-size: 150%;
     color: var(--black-color);
+}
+
+
+@media screen and (min-width: 1200px) {
+    .title_ashort{
+        font-size: 4.3vw;
+    }
+    .synopsis_ashort{
+        font-size: 1.5vw;
+    }
+    .info_ashort{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .title_ashort{
+        font-size: 6.3vw;
+    }
+    .synopsis_ashort{
+        font-size: 2.5vw;
+    }
+    .info_ashort{
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .title_ashort{
+        font-size: 7vw;
+    }
+    .synopsis_ashort{
+        font-size: 3vw;
+    }
+    .info_ashort{
+        font-size: 3vw;
+    }
 }

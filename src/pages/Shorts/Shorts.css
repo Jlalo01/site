@@ -24,16 +24,51 @@
 .title{
     font-family: Gopher;
     font-style: italic;
-    font-size: 200%;
 }
 
 .more-info{
     font-family: Space Mono;
-    font-size: 95%;
     color: var(--aqua-color);
     text-decoration: none;
 }
 
 .more-info:hover{
     text-decoration: underline;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .date{
+        font-size: 1vw;
+    }
+    .title{
+        font-size: 2vw;
+    }
+    .more-info{
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .date{
+        font-size: 1.5vw;
+    }
+    .title{
+        font-size: 2.5vw;
+    }
+    .more-info{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .date{
+        font-size: 2vw;
+    }
+    .title{
+        font-size: 3vw;
+    }
+    .more-info{
+        font-size: 2vw;
+    }
 }

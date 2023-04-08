@@ -7,12 +7,37 @@
 
 .home_title {
     font-family: Gopher;
-    font-size: 500%;
     color:white;
 }
 
 .home_name {
     font-family: Space Mono;
     color: var(--black-color);
-    font-size: 150%;
+}
+
+@media screen and (min-width: 1200px) {
+    .home_title{
+        font-size: 5vw;
+    }
+    .home_name{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .home_title{
+        font-size: 7vw;
+    }
+    .home_name{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .home_title{
+        font-size: 8.5vw;
+    }
+    .home_name{
+        font-size: 3.5vw;
+    }
 }

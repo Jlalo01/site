@@ -3,12 +3,11 @@ import './Video.css';
 
 const Video = props =>{
 
-    const w = window.innerWidth * 0.8;
-    const h = w*9/16;
+    const size = "video_" + props.size;
 
     return(
-        <div>
-            <iframe width={w} height={h} src={props.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div className={size}>
+            <iframe width={"100%"} height={"100%"} src={props.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     );
 }

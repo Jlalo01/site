@@ -16,7 +16,7 @@ const AShort = props => {
     return(
         <div className="page_padding">
             <div className="title_ashort">{data[props.id].name}</div>
-            <Video link={data[props.id].link} />
+            <Video link={data[props.id].link} size='normal' />
             <div className="synopsis_ashort">{data[props.id].synopsis}</div>
             <div className="info_ashort">Director: {data[props.id].director}</div>
             <div className="info_ashort">Writer: {data[props.id].writer}</div>

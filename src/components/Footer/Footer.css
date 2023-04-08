@@ -35,7 +35,6 @@
     font-family: Space Mono;
     font-weight: normal;
     color: var(--black-color);
-    font-size: small;
     text-decoration: underline;
 }
 
@@ -43,7 +42,6 @@
     font-family: Space Mono;
     font-weight: normal;
     color: var(--black-color);
-    font-size: small;
 }
 
 .info_padding{
@@ -54,4 +52,40 @@
     font-family: Gopher;
     font-size: 200%;
     color: var(--black-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .info_title{
+        font-size: 1.25vw;
+    }
+    .info_link{
+        font-size: 1vw;
+    }
+    .info_else{
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .info_title{
+        font-size: 1.75vw;
+    }
+    .info_link{
+        font-size: 1.5vw;
+    }
+    .info_else{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .info_title{
+        font-size: 2.75vw;
+    }
+    .info_link{
+        font-size: 2.5vw;
+    }
+    .info_else{
+        font-size: 1.95vw;
+    }
 }
