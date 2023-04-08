@@ -1,0 +1,14 @@
+.video_normal{
+    width: 80vw;
+    height: 45vw;
+}
+
+.video_small{
+    width: 36vw;
+    height: 20.25vw;
+}
+
+.video_smaller{
+    width: 32vw;
+    height: 18vw;
+}

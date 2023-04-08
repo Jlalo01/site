@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import VideoSmall from '../../components/VideoSmall/VideoSmall';
+import Video from '../../components/Video/Video';
 import data from './shorts.json';
 import './Shorts.css';
 
@@ -18,7 +18,7 @@ const Shorts = () =>{
                 {
                     short_names.map(short => (
                         <div className='short_block'>
-                            <VideoSmall link={data[short].link} />
+                            <Video link={data[short].link} size='small' />
                             <div className='date'>{data[short].date}</div>
                             <div className='title'>{data[short].name}</div>
                             <Link className="more-info" to={"/shorts/" + short}>

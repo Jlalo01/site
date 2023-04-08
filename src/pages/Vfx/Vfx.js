@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import VideoSmaller from "../../components/VideoSmaller/VideoSmaller";
+import Video from "../../components/Video/Video";
 import data from './vfx.json';
 import "./Vfx.css";
 
@@ -43,7 +43,7 @@ const Vfx = props =>{
                                 <div className="video_table">
                                     <div className="video_block">
                                         <div className="video_title">{data[video].name}</div>
-                                        <VideoSmaller link={data[video].link} />
+                                        <Video size='smaller' link={data[video].link} />
                                         <div className="video_info">{data[video].info}</div>
                                     </div>
                                 </div>
