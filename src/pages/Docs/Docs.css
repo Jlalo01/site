@@ -13,7 +13,6 @@
 .doc_title{
     color: var(--black-color);
     font-family: Gopher;
-    font-size: 150%;
     padding-bottom: 4%;
     padding-left: 2%;
 }
@@ -21,7 +20,33 @@
 .doc_info{
     color: var(--black-color);
     font-family: Space Mono;
-    font-size: 100%;
     padding-bottom: 3%;
     padding-left: 2%;
+}
+
+@media screen and (min-width: 1200px) {
+    .doc_title{
+        font-size: 2vw;
+    }
+    .doc_info{
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .doc_title{
+        font-size: 2.25vw;
+    }
+    .doc_info{
+        font-size: 1.25vw;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .doc_title{
+        font-size: 2.5vw;
+    }
+    .doc_info{
+        font-size: 1.5vw;
+    }
 }
