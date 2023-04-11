@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Video from '../../components/Video/Video';
-import data from './shorts.json';
 import './Shorts.css';
 
 const Shorts = () =>{
+
+    const [data, setData] = useState({});
+    //const [names, setNames] = useState([]);
+
+    useEffect(() => {
+        async function fetchData(){
+            const res = await axios.get("http://localhost:8000/shorts");
+            setData(res.data);
+        }
+        fetchData();
+    }, []);
 
     let short_names = [];
     for (let name in data){
         short_names.push(name);
     }
+    
 
 
     return(
