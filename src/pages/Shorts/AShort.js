@@ -6,30 +6,28 @@ import './AShort.css';
 
 const AShort = props => {
 
-    const [id, setID] = useState("0")
-    const [data, setData] = useState({"0":{name:""}});
+    const [data, setData] = useState({name:""});
 
     useEffect(() => {
         async function fetchData(){
-            const res = await axios.get("http://localhost:8000/shorts");
+            const res = await axios.get("http://localhost:8000/shorts/"+props.id);
             setData(res.data);
-            setID(props.id);
         }
         fetchData();
-    }, []);
+    }, [props.id]);
 
 
     return(
         <div className="page_padding">
-            <div className="title_ashort">{data[id].name}</div>
-            <Video link={data[id].link} size='normal' />
-            <div className="synopsis_ashort">{data[id].synopsis}</div>
-            <div className="info_ashort">Director: {data[id].director}</div>
-            <div className="info_ashort">Writer: {data[id].writer}</div>
-            <div className="info_ashort">Camera: {data[id].camera}</div>
-            <div className="info_ashort">Editor: {data[id].editor}</div>
-            <div className="info_ashort">Audio: {data[id].audio}</div>
-            <div className="info_ashort">Cast: {data[id].cast}</div>
+            <div className="title_ashort">{data.name}</div>
+            <Video link={data.link} size='normal' />
+            <div className="synopsis_ashort">{data.synopsis}</div>
+            <div className="info_ashort">Director: {data.director}</div>
+            <div className="info_ashort">Writer: {data.writer}</div>
+            <div className="info_ashort">Camera: {data.camera}</div>
+            <div className="info_ashort">Editor: {data.editor}</div>
+            <div className="info_ashort">Audio: {data.audio}</div>
+            <div className="info_ashort">Cast: {data.cast}</div>
         </div>
     );
 }
