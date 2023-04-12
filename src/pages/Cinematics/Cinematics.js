@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import Video from "../../components/Video/Video";
-import data from './cinematics.json';
+//import data from './cinematics.json';
 import './Cinematics.css';
 
 const Cinematics = () =>{
 
-    let names = [];
+    const [data, setData] = useState({});
+
+    useEffect(() => {
+        async function fetchData(){
+            const res = await axios.get("http://localhost:8000/cine");
+            setData(res.data);
+        }   
+        fetchData();
+    }, []);
+
+
+    let cine_names = [];
     for (let name in data){
-        names.push(name);
+        cine_names.push(name);
     }
 
 
@@ -15,7 +27,8 @@ const Cinematics = () =>{
         <div className="page_padding">
             <table>
             {
-                names.map(cinema => (
+                cine_names.map(cinema => (
+                    <tbody>
                     <tr>
                         <td><Video size='small' className="cine_video" link={data[cinema].link} /></td>
                         <td>
@@ -25,6 +38,7 @@ const Cinematics = () =>{
                             <div className="cine_info">Lense: {data[cinema].lense}</div>
                         </td>
                     </tr>
+                    </tbody>
                 ))
             }
             </table>
