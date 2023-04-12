@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import Video from "../../components/Video/Video";
-import data from './docs.json';
+//import data from './docs.json';
 import './Docs.css';
 
 const Docs = () =>{
+
+    const [data, setData] = useState({});
+
+    useEffect(() => {
+        async function fetchData(){
+            const res = await axios.get("http://localhost:8000/docs");
+            setData(res.data);
+        }   
+        fetchData();
+    }, []);
 
     const docs = [];
     for (let name in data){
@@ -15,6 +26,7 @@ const Docs = () =>{
             <table>
             {
                 docs.map(doc => (
+                    <tbody>
                     <tr>
                         <td><Video size='small' className="doc_video" link={data[doc].link} /></td>
                         <td>
@@ -22,6 +34,7 @@ const Docs = () =>{
                             <div className="doc_info">{data[doc].info}</div>
                         </td>
                     </tr>
+                    </tbody>
                 ))
             }
             </table>
