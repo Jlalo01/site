@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import { Link } from "react-router-dom";
 import Video from "../../components/Video/Video";
-import data from './vfx.json';
+//import data from './vfx.json';
 import "./Vfx.css";
 
 const Vfx = props =>{
+
+    const [data, setData] = useState({});
+
+    useEffect(() => {
+        async function fetchData(){
+            const res = await axios.get("http://localhost:8000/vfx");
+            setData(res.data);
+        }   
+        fetchData();
+    }, []);
 
     let on = props.id.id;
     let cats = [];
