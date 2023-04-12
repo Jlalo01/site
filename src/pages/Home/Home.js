@@ -9,13 +9,12 @@ const Home = () => {
     
     useEffect(() =>{
         async function fetchData(){
-            const res = await axios.get("http://localhost:8000/home");
+            const res = await axios.get("https://joeylalo-site-back.onrender.com/home");
             setData(res.data);
         }
         fetchData();
     }, []);
 
-    console.log(data);
 
     return (
         <div className='page_padding'>
