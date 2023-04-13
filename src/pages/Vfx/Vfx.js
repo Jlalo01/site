@@ -11,7 +11,7 @@ const Vfx = props =>{
 
     useEffect(() => {
         async function fetchData(){
-            const res = await axios.get("http://localhost:8000/vfx");
+            const res = await axios.get("https://joeylalo-site-back.onrender.com/vfx");
             setData(res.data);
         }   
         fetchData();

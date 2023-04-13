@@ -10,7 +10,7 @@ const Docs = () =>{
 
     useEffect(() => {
         async function fetchData(){
-            const res = await axios.get("http://localhost:8000/docs");
+            const res = await axios.get("https://joeylalo-site-back.onrender.com/docs");
             setData(res.data);
         }   
         fetchData();

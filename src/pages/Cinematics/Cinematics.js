@@ -10,7 +10,7 @@ const Cinematics = () =>{
 
     useEffect(() => {
         async function fetchData(){
-            const res = await axios.get("http://localhost:8000/cine");
+            const res = await axios.get("https://joeylalo-site-back.onrender.com/cine");
             setData(res.data);
         }   
         fetchData();

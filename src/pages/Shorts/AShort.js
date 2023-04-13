@@ -10,7 +10,7 @@ const AShort = props => {
 
     useEffect(() => {
         async function fetchData(){
-            const res = await axios.get("http://localhost:8000/shorts/"+props.id);
+            const res = await axios.get("https://joeylalo-site-back.onrender.com/shorts/"+props.id);
             setData(res.data);
         }
         fetchData();
