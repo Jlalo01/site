@@ -6,7 +6,7 @@ import './Shorts.css';
 
 const Shorts = () =>{
 
-    const [data, setData] = useState({});
+    const [data, setData] = useState([]);
     //const [names, setNames] = useState([]);
 
     useEffect(() => {
@@ -17,23 +17,18 @@ const Shorts = () =>{
         fetchData();
     }, []);
 
-    let short_names = [];
-    for (let name in data){
-        short_names.push(name);
-    }
-    
 
 
     return(
         <div className='page_padding'>
             <div className='shorts_row'>
                 {
-                    short_names.map(short => (
+                    data.map(short => (
                         <div className='short_block'>
-                            <Video link={data[short].link} size='small' />
-                            <div className='date'>{data[short].date}</div>
-                            <div className='title'>{data[short].name}</div>
-                            <Link className="more-info" to={"/shorts/" + short}>
+                            <Video link={short.link} size='small' />
+                            <div className='date'>{short.date}</div>
+                            <div className='title'>{short.name}</div>
+                            <Link className="more-info" to={"/shorts/" + short.tag}>
                                 <div>More Info</div>
                             </Link>
                         </div>

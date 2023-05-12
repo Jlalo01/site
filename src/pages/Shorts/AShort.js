@@ -6,12 +6,12 @@ import './AShort.css';
 
 const AShort = props => {
 
-    const [data, setData] = useState({name:""});
+    const [data, setData] = useState([{name:""}]);
 
     useEffect(() => {
         async function fetchData(){
             const res = await axios.get("https://joeylalo-site-back.onrender.com/shorts/"+props.id);
-            setData(res.data);
+            setData(res.data[0]);
         }
         fetchData();
     }, [props.id]);

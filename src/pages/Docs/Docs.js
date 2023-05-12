@@ -6,7 +6,7 @@ import './Docs.css';
 
 const Docs = () =>{
 
-    const [data, setData] = useState({});
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         async function fetchData(){
@@ -16,22 +16,18 @@ const Docs = () =>{
         fetchData();
     }, []);
 
-    const docs = [];
-    for (let name in data){
-        docs.push(name);
-    }
 
     return(
         <div className="page_padding">
             <table>
             {
-                docs.map(doc => (
+                data.map(doc => (
                     <tbody>
                     <tr>
-                        <td><Video size='small' className="doc_video" link={data[doc].link} /></td>
+                        <td><Video size='small' className="doc_video" link={doc.link} /></td>
                         <td>
-                            <div className="doc_title">{data[doc].name}</div>
-                            <div className="doc_info">{data[doc].info}</div>
+                            <div className="doc_title">{doc.name}</div>
+                            <div className="doc_info">{doc.info}</div>
                         </td>
                     </tr>
                     </tbody>

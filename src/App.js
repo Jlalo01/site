@@ -6,6 +6,7 @@ import ShortsPage from './pages/Shorts/ShortsPage';
 import CinematicsPage from './pages/Cinematics/CinematicsPage';
 import DocsPage from './pages/Docs/DocsPage';
 import VfxPage from './pages/Vfx/VfxPage';
+import ProgrammingPage from './pages/Programming/ProgrammingPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/docs" element={ <DocsPage /> } />
         <Route path="/vfx" element={ <VfxPage /> } />
         <Route path="/vfx/:id" element={ <VfxPage /> } />
+        <Route path="/programming" element={ <ProgrammingPage /> } />
         <Route path="/wip" element={ <WIP /> } />
       </Routes>
     </Router>

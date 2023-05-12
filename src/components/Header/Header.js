@@ -36,7 +36,7 @@ const Header = props => {
     }
 
     function toProgramming(){
-        navigate('/wip');
+        navigate('/programming');
     }
 
     const c = props.color;

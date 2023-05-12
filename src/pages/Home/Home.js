@@ -10,7 +10,7 @@ const Home = () => {
     useEffect(() =>{
         async function fetchData(){
             const res = await axios.get("https://joeylalo-site-back.onrender.com/home");
-            setData(res.data);
+            setData(res.data[0]);
         }
         fetchData();
     }, []);

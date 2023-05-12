@@ -7,7 +7,7 @@ import "./Vfx.css";
 
 const Vfx = props =>{
 
-    const [data, setData] = useState({});
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         async function fetchData(){
@@ -18,21 +18,7 @@ const Vfx = props =>{
     }, []);
 
     let on = props.id.id;
-    let cats = [];
 
-    if (on === undefined){
-        for (let name in data){
-            cats.push(name);
-            console.log(data[name].tags);
-        }
-    }
-    else{
-        for (let name in data){
-            if (data[name].tags.includes(on)){
-                cats.push(name);
-            }
-        }
-    }
 
 
     return(
@@ -50,15 +36,20 @@ const Vfx = props =>{
                 <div className="rest">
                     <div className="video_setup">
                         {
-                            cats.map(video =>(
-                                <div className="video_table">
-                                    <div className="video_block">
-                                        <div className="video_title">{data[video].name}</div>
-                                        <Video size='smaller' link={data[video].link} />
-                                        <div className="video_info">{data[video].info}</div>
+                            data.map(video =>{
+                                if (video.tags.includes(on) || on === undefined){
+                                    return (
+                                    <div className="video_table">
+                                        <div className="video_block">
+                                            <div className="video_title">{video.name}</div>
+                                            <Video size='smaller' link={video.link} />
+                                            <div className="video_info">{video.info}</div>
+                                        </div>
                                     </div>
-                                </div>
-                            ))
+                                    )
+                                }
+                                else{return(<div></div>)}
+                            })
                         }
                     </div>
                 </div>

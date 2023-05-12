@@ -1,0 +1,46 @@
+.proj_name{
+    font-family: Gopher;
+    color: black;
+    font-size: 3vw;
+    font-style: italic;
+    padding-bottom: 1%;
+}
+
+.langmods{
+    font-family: Space Mono;
+    font-size: 1.25vw;
+    padding-bottom: 0.5%;
+}
+.langmodsB{
+    font-family: Space Mono;
+    font-size: 1.25vw;
+    padding-bottom: 0.5%;
+    color: black;
+    display: inline;
+}
+
+.proj_info{
+    font-family: Space Mono;
+    font-size: 1.25vw;
+    padding-bottom: 0.5%;
+}
+.proj_infoB{
+    font-family: Space Mono;
+    font-size: 1.25vw;
+    padding-bottom: 0.5%;
+    display: inline;
+    color: black;
+}
+
+.proj_link{
+    font-family: Space Mono;
+    font-size: 1.25vw;
+    color: white;
+}
+.proj_link:hover{
+    color:var(--aqua-color);
+}
+
+.all_proj{
+    padding-bottom: 3%;
+}
