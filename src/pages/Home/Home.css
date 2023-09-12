@@ -54,6 +54,12 @@
     cursor: pointer;
     border-radius: 0.4vw;
 }
+
+.home_videos_thumb:hover{
+    width: 22.365vw;
+    height: 21vh
+}
+
 .home_videos_thumb_pad{
     width: 21.3vw;
     height: 20vh;
