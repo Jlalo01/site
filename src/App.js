@@ -7,12 +7,14 @@ import CinematicsPage from './pages/Cinematics/CinematicsPage';
 import DocsPage from './pages/Docs/DocsPage';
 import VfxPage from './pages/Vfx/VfxPage';
 import ProgrammingPage from './pages/Programming/ProgrammingPage';
+import Play from './pages/Play/Play';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={ <HomePage /> } />
+        <Route path="/:tag" element={<Play />} />
         <Route path="/shorts" element={ <ShortsPage /> } />
         <Route path="/shorts/:id" element={ <ShortsPage /> } />
         <Route path="/cinematics" element={ <CinematicsPage /> } />

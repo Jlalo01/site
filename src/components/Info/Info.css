@@ -1,0 +1,71 @@
+.all_info{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.info_box_pad{
+    padding-top: 15vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 70vh;
+}
+
+.info_box{
+    background-color: var(--black-color);
+    height: 100%;
+    padding: 3%;
+    color: whitesmoke;
+    font-family: Space Mono;
+    border-color: var(--purple-color);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.info_thumb{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.info_box_back{
+    font-family: Gopher;
+    cursor: pointer;
+    font-size: 2vh;
+}
+.info_box_back:hover{
+    text-decoration: underline;
+}
+
+.info_box_title{
+    font-size: 4vh; 
+}
+
+.info_box_info{
+    font-size: 2vh;
+    padding-bottom: 2%;
+}
+
+.info_box_specs{
+    font-size: 2vh;
+}
+
+.play_button{
+    position:absolute;
+    color: black;
+    background-color: white;
+    font-family: Gopher;
+    padding: 0.5%;
+    border-radius: 1vh;
+    top: 49vh;
+    left: 23vw;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.play_button:hover{
+    background-color: lightgray;
+}

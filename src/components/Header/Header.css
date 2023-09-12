@@ -1,70 +1,61 @@
-.header_padding {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 50px;
-    padding-bottom: 5%;
-    background-color: transparent;
+.navbar {
+    height: 13vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .navbar img {
+    height: 13vh;
+    width: auto;
+  }
+  
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (min-width: 786px){
+
+    .nav-link {
+      margin: 0 20px;
+      font-size: 1.5vw;
+      font-family: Gopher;
+      cursor: pointer;
+    }
+    .nav-link:hover{
+      text-decoration: underline;
+    }
 }
 
-.home-button{
+  @media (max-width: 786px){
+    .nav-link{
+      margin: 0 20px;
+      font-size: 3vw;
+      font-family: Gopher;
+      cursor: pointer;
+    }
+    .nav-link:hover{
+      text-decoration: underline;
+    }
+  }
+  
+  /* Navbar styles when scrolling */
+  .navbar.scrolling {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo{
     cursor: pointer;
-    font-family: Gopher;
-    display: inline;
-    padding-right: 10%;
-    transition: font-size 0.25s ease-out;
-}
-
-.nav-button {
-    display: inline;
-    cursor: pointer;
-    font-family: Space Mono;
-    padding-right: 3%;
-    padding-top: 1%;
-    float: right;
-    transition: font-size 0.25s ease-out;
-    color: white;
-}
-
-.nav-button:hover{
-    transition: font-size 0.25s ease-out;
-    color: white;
-}
-
-
-@media screen and (min-width: 1200px) {
-    .home-button{
-        font-size: 2vw;
-    }
-    .nav-button{
-        font-size: 1vw;
-    }
-    .nav-button:hover{
-        font-size: 1.25vw;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .home-button{
-        font-size: 3vw;
-    }
-
-    .nav-button{
-        font-size: 1.5vw;
-    }
-    .nav-button:hover{
-        font-size: 1.75vw;
-    }
-}
-
-@media screen and (max-width: 849px) {
-    .home-button{
-        font-size: 3.5vw;
-    }
-
-    .nav-button{
-        font-size: 2vw;
-    }
-    .nav-button:hover{
-        font-size: 2.25vw;
-    }
-}
+  }

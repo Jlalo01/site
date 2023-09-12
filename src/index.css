@@ -1,5 +1,5 @@
 :root{
-  --black-color: #06070d;
+  --black-color: #0b0c17;
   --pink-color: #d56bf2;
   --purple-color: #7f6df2;
   --blue-color: #6db4f2;
@@ -60,4 +60,10 @@ code {
   src: local("Space Mono"),
   url("./fonts/SpaceMono-Italic.ttf") format("truetype");
   font-style: italic;
+}
+
+@font-face {
+  font-family: "Anton";
+  src: local("Anton");
+  src: url("./fonts/Anton.ttf") format("truetype");
 }

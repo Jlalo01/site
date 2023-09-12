@@ -1,57 +1,49 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
 
 
 const Header = props => {
-
     const navigate = useNavigate();
+    const [scrolling, setScrolling] = useState(false);
 
-    function toHome(){
-        navigate('/');
-    }
-    
-    function toShorts(){
-        navigate('/shorts');
-    }
+  // Add an event listener to detect scroll position
+    useEffect(() => {
+        const handleScroll = () => {
+        if (window.scrollY >= 50) {
+            setScrolling(true);
+        } else {
+        setScrolling(false);
+        }
+        };
 
-    function toCinematics(){
-        navigate('/cinematics');
-    }
+        window.addEventListener('scroll', handleScroll);
 
-    function toDocs(){
-        navigate('/docs');
-    }
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
-    function toMusic(){
-        navigate('/wip');
-    }
-
-    function toVFX(){
-        navigate('/vfx');
+    function handle_home(){
+        navigate("/");
     }
 
-    function toAnimation(){
-        navigate('/wip');
+    function handle_shorts(){
+        navigate("/shorts");
     }
-
-    function toProgramming(){
-        navigate('/programming');
-    }
-
-    const c = props.color;
 
     return(
-        <div className="header_padding">
-            <div className="home-button" style={{color:c}} onClick={toHome}>Joey Lalo</div>
-            <div className='nav-button' style={{color:c}} onClick={toProgramming}>Programming</div>
-            <div className='nav-button' style={{color:c}} onClick={toAnimation}>Animation</div>
-            <div className='nav-button' style={{color:c}} onClick={toVFX}>VFX</div>
-            <div className='nav-button' style={{color:c}} onClick={toMusic}>Music Videos</div>
-            <div className='nav-button' style={{color:c}} onClick={toDocs}>Documentaries</div>
-            <div className='nav-button' style={{color:c}} onClick={toCinematics}>Cinematics</div>
-            <div className='nav-button' style={{color:c}} onClick={toShorts}>Short Films</div>    
-        </div>
+        <nav className={`navbar ${scrolling ? 'scrolling' : ''}`}>
+            <div className="logo">
+                <img onClick={handle_home} src="Logo.png" alt="Logo" />
+            </div>
+            <div className="nav-links">
+                <div className="nav-link" onClick={handle_shorts}>Shorts</div>
+                <div className="nav-link">Link 2</div>
+                <div className="nav-link">Link 3</div>
+                <div className="nav-link">Link 4</div>
+            </div>
+        </nav>
     );
 }
 
