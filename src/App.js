@@ -16,7 +16,6 @@ function App() {
         <Route path="/" element={ <HomePage /> } />
         <Route path="/:tag" element={<Play />} />
         <Route path="/shorts" element={ <ShortsPage /> } />
-        <Route path="/shorts/:id" element={ <ShortsPage /> } />
         <Route path="/cinematics" element={ <CinematicsPage /> } />
         <Route path="/docs" element={ <DocsPage /> } />
         <Route path="/vfx" element={ <VfxPage /> } />
