@@ -6,7 +6,7 @@ import Info from '../../components/Info/Info';
 import './Category.css';
 
 const Shorts = () =>{
-    const server = "http://localhost:8000";
+    const server = "https://joeylalo-site-back.onrender.com";
     const [data, setData] = useState([{tag:"NpEaa2P7qZI", name:"LOADING"}]);
     const [selection, setSelection] = useState({});
     const [trig, setTrig] = useState(false);
