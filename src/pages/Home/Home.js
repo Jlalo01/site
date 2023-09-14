@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 //import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 //import Video from '../../components/Video/Video';
 import Info from '../../components/Info/Info';
@@ -8,7 +9,7 @@ import './Home.css';
 
 const Home = () => {
     const server = "https://joeylalo-site-back.onrender.com";
-    //const navigate = useNavigate();
+    const navigate = useNavigate();
     const [slides, setSlides] = useState([{tag:"NpEaa2P7qZI", name:"LOADING"}]);
     const [onSlide, setOn] = useState(0);
     const [categories, setCategories] = useState([]);
@@ -45,6 +46,11 @@ const Home = () => {
         window.scrollTo(0,0);
     }
 
+    function handleSelectCat(cur_tag){
+        window.scrollTo(0,0);
+        navigate("/"+cur_tag);
+    }
+
 
     return (
         <div>
@@ -60,7 +66,7 @@ const Home = () => {
                         let count = 0;
                         return(
                             <div>
-                                <div className='home_cat_name'>{category[0].category}</div>
+                                <div className='home_cat_name' onClick={() => handleSelectCat(category[0].category)}>{category[0].category}</div>
                                 <div className='home_cat_container'>
                                     {
                                         category.map(video => {

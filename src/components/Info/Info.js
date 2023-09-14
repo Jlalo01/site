@@ -12,7 +12,7 @@ const Info = props => {
 
     function handlePlay(){
         window.scrollTo(0,0);
-        navigate("/"+props.selection.tag);
+        navigate("/play/"+props.selection.tag);
     }
 
     return (props.trigger) ?(

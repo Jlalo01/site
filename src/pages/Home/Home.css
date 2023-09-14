@@ -71,12 +71,18 @@
     padding-left: 1vw;
     font-family: Gopher;
     font-size: 1.6vw;
+    padding-bottom: 0.7vh;
+    cursor: pointer;
+}
+.home_cat_name:hover{
+    text-decoration: underline;
 }
 
 .return_to_top{
     text-align: center;
     align-items: center;
     padding-bottom: 2vh;
+    padding-top: 2vh;
     font-family: Space Mono;
     cursor: pointer;
 }

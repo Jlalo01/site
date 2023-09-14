@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Thumbnail from '../../components/Thumbnail/Thumbnail';
 import Info from '../../components/Info/Info';
-import './Shorts.css';
+import './Category.css';
 
 const Shorts = () =>{
     const server = "http://localhost:8000";
     const [data, setData] = useState([{tag:"NpEaa2P7qZI", name:"LOADING"}]);
     const [selection, setSelection] = useState({});
     const [trig, setTrig] = useState(false);
+    const { category } = useParams();
 
     useEffect(() =>{
         async function fetchData(){
-            const res = await axios.get(server+"/video/ord-cat/Shorts")
+            const res = await axios.get(server+"/video/ord-cat/"+category);
             setData(res.data);
         }
         fetchData()
-    }, [])
+    }, [category])
 
     function handleReturnTop(){
         window.scrollTo(0,0);
@@ -30,8 +32,9 @@ const Shorts = () =>{
 
 
     return(
+        <div>
         <div className='shorts_padding'>
-            <div className='short_title'>Shorts</div>
+            <div className='short_title'>{category}</div>
             {
                 data.map(video => {
                     return(
@@ -44,6 +47,7 @@ const Shorts = () =>{
                 })
             }
             <Info selection={selection} trigger={trig} back={setTrig} />
+        </div>
             <div className='return_to_top' onClick={handleReturnTop}>Return to Top</div>
         </div>
     );

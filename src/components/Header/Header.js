@@ -24,24 +24,32 @@ const Header = props => {
         };
     }, []);
 
-    function handle_home(){
+    function handleHome(){
         navigate("/");
     }
 
-    function handle_shorts(){
-        navigate("/shorts");
+    function handleShorts(){
+        navigate("/Shorts");
+    }
+
+    function handleCinematics(){
+        navigate("/Cinematics");
+    }
+
+    function handleWIP(){
+        navigate("/wip");
     }
 
     return(
         <nav className={`navbar ${scrolling ? 'scrolling' : ''}`}>
             <div className="logo">
-                <img onClick={handle_home} src="Logo.png" alt="Logo" />
+                <img onClick={handleHome} src="Logo.png" alt="Logo" />
             </div>
             <div className="nav-links">
-                <div className="nav-link" onClick={handle_shorts}>Shorts</div>
-                <div className="nav-link">Link 2</div>
-                <div className="nav-link">Link 3</div>
-                <div className="nav-link">Link 4</div>
+                <div className="nav-link" onClick={handleShorts}>Shorts</div>
+                <div className="nav-link" onClick={handleCinematics}>Cinematics</div>
+                <div className="nav-link" onClick={handleWIP}>Photography</div>
+                <div className="nav-link">Programming</div>
             </div>
         </nav>
     );

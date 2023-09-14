@@ -1,8 +1,8 @@
 import React from 'react';
-import Shorts from './Shorts';
+import Shorts from './Category';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import './ShortsPage.css';
+import './CategoryPage.css';
 
 const ShortsPage = () =>{
 
