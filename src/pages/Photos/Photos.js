@@ -22,7 +22,7 @@ const Photos = () => {
     function handleClick(cur_element){
         setSelection(cur_element);
         setTrig(true);
-        console.log(cur_element.tag);
+        window.scrollTo(0,0);
     }
 
     return (
