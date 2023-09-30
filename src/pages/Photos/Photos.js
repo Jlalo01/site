@@ -5,7 +5,7 @@ import APhoto from '../../components/APhoto/APhoto';
 import './Photos.css';
 
 const Photos = () => {
-    const server = "http://localhost:8000";
+    const server = "https://joeylalo-site-back.onrender.com";
     //const navigate = useNavigate();
     const [data, setData] = useState([]);
     const [selection, setSelection] = useState("");
