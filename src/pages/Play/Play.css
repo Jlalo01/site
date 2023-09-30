@@ -1,6 +1,6 @@
 .play_page {
     background-color: var(--black-color);
-    color: white;
+    color: var(--white-color);
 }
 
 .play_video{
@@ -21,10 +21,16 @@
     font-size: 2vh;
     cursor: pointer;
     width: 5%;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    text-align: center;
+    padding: 0.5%;
+    border-radius: 5px;
 }
 
 .play_info_back:hover{
     text-decoration: underline;
+    background-color: lightgrey;
 }
 
 .play_info_name{

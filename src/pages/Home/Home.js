@@ -8,7 +8,7 @@ import Thumbnail from '../../components/Thumbnail/Thumbnail';
 import './Home.css';
 
 const Home = () => {
-    const server = "https://joeylalo-site-back.onrender.com";
+    const server = "http://localhost:8000";
     const navigate = useNavigate();
     const [slides, setSlides] = useState([{tag:"NpEaa2P7qZI", name:"LOADING"}]);
     const [onSlide, setOn] = useState(0);
@@ -38,6 +38,7 @@ const Home = () => {
 
     async function handleInfo(cur_tag){
         const res = await axios.get(server+"/video/tag/"+cur_tag);
+        console.log(cur_tag);
         setSelection(res.data[0]);
         setTrig(true);
     }

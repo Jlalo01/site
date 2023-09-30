@@ -1,6 +1,6 @@
 .proj_name{
     font-family: Gopher;
-    color: black;
+    color: var(--black-color);
     font-size: 3vw;
     font-style: italic;
     padding-bottom: 1%;
@@ -15,7 +15,7 @@
     font-family: Space Mono;
     font-size: 1.25vw;
     padding-bottom: 0.5%;
-    color: black;
+    color: var(--black-color);
     display: inline;
 }
 
@@ -29,13 +29,13 @@
     font-size: 1.25vw;
     padding-bottom: 0.5%;
     display: inline;
-    color: black;
+    color: var(--black-color);
 }
 
 .proj_link{
     font-family: Space Mono;
     font-size: 1.25vw;
-    color: white;
+    color: var(--white-color);
 }
 .proj_link:hover{
     color:var(--aqua-color);
@@ -43,4 +43,10 @@
 
 .all_proj{
     padding-bottom: 3%;
+}
+
+.prog_pad{
+    padding-top: 15vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }

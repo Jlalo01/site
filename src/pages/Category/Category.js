@@ -5,7 +5,7 @@ import Thumbnail from '../../components/Thumbnail/Thumbnail';
 import Info from '../../components/Info/Info';
 import './Category.css';
 
-const Shorts = () =>{
+const Category = () =>{
     const server = "https://joeylalo-site-back.onrender.com";
     const [data, setData] = useState([{tag:"NpEaa2P7qZI", name:"LOADING"}]);
     const [selection, setSelection] = useState({});
@@ -54,4 +54,4 @@ const Shorts = () =>{
 }   
 
 
-export default Shorts;
+export default Category;

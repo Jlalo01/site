@@ -18,7 +18,7 @@
     background-color: var(--black-color);
     height: 100%;
     padding: 3%;
-    color: whitesmoke;
+    color: var(--white-color);
     font-family: Space Mono;
     border-color: var(--purple-color);
     border-width: 1px;
@@ -55,8 +55,8 @@
 
 .play_button{
     position:absolute;
-    color: black;
-    background-color: white;
+    color: var(--black-color);
+    background-color: var(--white-color);
     font-family: Gopher;
     padding: 0.5%;
     border-radius: 1vh;

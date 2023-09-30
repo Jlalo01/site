@@ -6,7 +6,7 @@
 }
 
 .footer_padding{
-    background-color: white;
+    background-color: var(--white-color);
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 50px;

@@ -1,0 +1,27 @@
+.all_photos_pad{
+    padding-top: 16vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.photos_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.a_photo{
+    padding: 1vw;
+    width: 24.66vw;
+    height: 24.66vw;
+}
+
+.photo_fit{
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.photo_fit:hover{
+    border-color: var(--white-color);
+    border-style: solid;
+}

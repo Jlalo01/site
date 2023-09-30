@@ -1,0 +1,59 @@
+.all_photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.photo_box{
+    padding-top: 1vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    width: 70vw;
+}
+
+.photo_back{
+    padding-top: 12vh;
+    padding-left: 15vw;
+    font-family: Gopher;
+    font-size: 2vh;
+    cursor: pointer;
+}
+.photo_back:hover{
+    text-decoration: underline;
+}
+
+.in_photo_box{
+    background-color: rgb(10,10,20);
+    width: 100%;
+    border-color: var(--blue-color);
+    border-style: solid;
+    padding-top: 2vh;
+}
+
+.in_photo_box_photo_center{
+    text-align: center;
+    align-items: center;
+}
+
+.the_photo{
+    width: 95%;
+    padding-bottom: 1vh;
+}
+
+.the_photo_text{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+}
+
+.the_photo_name{
+    font-family: Space Mono;
+    font-size: 6vh;
+    padding-bottom: 1vh;
+}
+
+.the_photo_info{
+    font-family: Space Mono;
+    font-size: 3vh;
+}

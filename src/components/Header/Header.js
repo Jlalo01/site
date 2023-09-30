@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Header.css';
 
 
-const Header = props => {
+const Header = () => {
     const navigate = useNavigate();
     const [scrolling, setScrolling] = useState(false);
 
@@ -36,8 +36,12 @@ const Header = props => {
         navigate("/Cinematics");
     }
 
-    function handleWIP(){
-        navigate("/wip");
+    function handlePhotos(){
+        navigate("/photos");
+    }
+
+    function handleProg(){
+        navigate("/programming");
     }
 
     return(
@@ -48,8 +52,8 @@ const Header = props => {
             <div className="nav-links">
                 <div className="nav-link" onClick={handleShorts}>Shorts</div>
                 <div className="nav-link" onClick={handleCinematics}>Cinematics</div>
-                <div className="nav-link" onClick={handleWIP}>Photography</div>
-                <div className="nav-link">Programming</div>
+                <div className="nav-link" onClick={handlePhotos}>Photography</div>
+                <div className="nav-link" onClick={handleProg}>Programming</div>
             </div>
         </nav>
     );

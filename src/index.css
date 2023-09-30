@@ -4,6 +4,7 @@
   --purple-color: #7f6df2;
   --blue-color: #6db4f2;
   --aqua-color: #6bf2e5;
+  --white-color: #f2f3f4;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--pink-color);
+  background-color: var(--blue-color);
 }
 
 code {
