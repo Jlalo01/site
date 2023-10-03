@@ -31,6 +31,13 @@ const Photos = () => {
                 <div className='photos_container'>
                     {
                         data.map((element, i) =>{
+                            if (element.name === "break"){
+                                return(
+                                <div className='a_photo'>
+                                    <div className='photo_fit' />
+                                </div>
+                                );
+                            }
                             return(
                                 <div className='a_photo'>
                                     <img className='photo_fit' width={"100%"} height={"100%"} onClick={() => handleClick(element)} src={"https://drive.google.com/uc?export=view&id="+element.tag} alt={element.name} />
