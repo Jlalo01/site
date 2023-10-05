@@ -75,6 +75,14 @@
     cursor: pointer;
 }
 .home_cat_name:hover{
+    font-size: 1.8vw;
+    text-decoration: underline;
+}
+
+.home_cat_more{
+    display: inline;
+    font-family: Gopher;
+    font-size: 1vw;
     text-decoration: underline;
 }
 

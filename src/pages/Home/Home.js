@@ -67,7 +67,7 @@ const Home = () => {
                         let count = 0;
                         return(
                             <div>
-                                <div className='home_cat_name' onClick={() => handleSelectCat(category[0].category)}>{category[0].category}</div>
+                                <div className='home_cat_name' onClick={() => handleSelectCat(category[0].category)}>{category[0].category+" "}</div>
                                 <div className='home_cat_container'>
                                     {
                                         category.map(video => {
