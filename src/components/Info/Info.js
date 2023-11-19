@@ -21,7 +21,7 @@ const Info = props => {
                 <div className='info_box_back' onClick={handleBack}>{"<Back"}</div>
                 <div className='info_box'>
                     <div className='play_button' onClick={handlePlay}>{"Play >"}</div>
-                    <Thumbnail className="info_thumb" tag={props.selection.tag} alt={props.selection.name} />
+                    <Thumbnail className="info_thumb" tag={props.selection.tag} other={props.selection.alt} alt={props.selection.name} />
                     <div className='info_box_title'>{props.selection.name}</div>
                     <div className='info_box_info'>{props.selection.info}</div>
                     {

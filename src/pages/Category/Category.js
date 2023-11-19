@@ -40,7 +40,7 @@ const Category = () =>{
                     return(
                         <div className='short_grid'>
                             <div className='short_video_thumb_pad'>
-                                <Thumbnail onClick={() => handleInfo(video.tag)} className="short_video_thumb" tag={video.tag} alt={video.name} />
+                                <Thumbnail onClick={() => handleInfo(video.tag)} className="short_video_thumb"  other={video.alt} tag={video.tag} alt={video.name} />
                             </div>
                         </div>
                     );

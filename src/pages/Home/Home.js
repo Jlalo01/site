@@ -59,7 +59,7 @@ const Home = () => {
                 <div className='slide_name'>
                     <div className='slide_name_text'>{slides[onSlide].name}</div>
                 </div>
-                <Thumbnail className="slide_image" onClick={() => handleInfo(slides[onSlide].tag)} tag={slides[onSlide].tag} alt={slides[onSlide].tag} />
+                <Thumbnail className="slide_image" onClick={() => handleInfo(slides[onSlide].tag)} other={slides[onSlide].alt} tag={slides[onSlide].tag} alt={slides[onSlide].tag} />
             </div>
             <div className='home_cat_pad'>
                 {
@@ -74,7 +74,7 @@ const Home = () => {
                                             count = count+1;
                                             return (count <= 4) ? (
                                                 <div className='home_videos_thumb_pad'>
-                                                    <Thumbnail onClick={() => handleInfo(video.tag)} className="home_videos_thumb" tag={video.tag} alt={video.name} />
+                                                    <Thumbnail onClick={() => handleInfo(video.tag)} className="home_videos_thumb" tag={video.tag} other={video.alt} alt={video.name} />
                                                 </div>
                                             ):"";
                                         })
