@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import './Play.css';
 
 const Play = () =>{
-    const server = "https://joeylalo-site-back.onrender.com"
+    const server = "https://jlmyall.lat/joey"
     const navigate = useNavigate();
     const [video, setVideo] = useState({specs:[]});
     const { tag } = useParams();

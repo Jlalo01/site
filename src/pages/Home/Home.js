@@ -8,7 +8,7 @@ import Thumbnail from '../../components/Thumbnail/Thumbnail';
 import './Home.css';
 
 const Home = () => {
-    const server = "https://joeylalo-site-back.onrender.com";
+    const server = "https://jlmyall.lat/joey";
     const navigate = useNavigate();
     const [slides, setSlides] = useState([{tag:"NpEaa2P7qZI", name:"LOADING"}]);
     const [onSlide, setOn] = useState(0);
