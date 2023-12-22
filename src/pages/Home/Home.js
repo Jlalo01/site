@@ -10,7 +10,7 @@ import './Home.css';
 const Home = () => {
     const server = "https://jlmyall.lat/joey";
     const navigate = useNavigate();
-    const [slides, setSlides] = useState([{tag:"NpEaa2P7qZI", name:"LOADING"}]);
+    const [slides, setSlides] = useState([{tag:"NpEaa2P7qZI", name:"LOADING", alt:"none"}]);
     const [onSlide, setOn] = useState(0);
     const [categories, setCategories] = useState([]);
     const [selection, setSelection] = useState({});
