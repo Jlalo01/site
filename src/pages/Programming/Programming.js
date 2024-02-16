@@ -9,7 +9,7 @@ const Programming = () =>{
     
     useEffect(() =>{
         async function fetchData(){
-            const res = await axios.get("https://jlmyall.lat/joey");
+            const res = await axios.get("https://jlmyall.lat/joey/prog");
             setData(res.data);
         }
         fetchData();
