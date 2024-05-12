@@ -6,7 +6,7 @@ const Thumbnail = props => {
     return (props.other === "none") ? (
         <img className={props.className} onClick={props.onClick} src={"https://img.youtube.com/vi/"+props.tag+"/maxresdefault.jpg"} alt={props.alt} />
     ) : (
-        <img className={props.className} onClick={props.onClick} src={"https://drive.google.com/uc?export=view&id="+props.other} alt={props.alt} />
+        <img className={props.className} onClick={props.onClick} referrerPolicy="no-referrer" src={"https://f005.backblazeb2.com/file/PhotosSite/Thumbnails/"+props.other} alt={props.alt} />
     );
 }
 

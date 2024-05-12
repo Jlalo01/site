@@ -12,7 +12,7 @@ const APhoto = props => {
             <div className='photo_back' onClick={handleBack}>{"<Back"}</div>
             <div className='photo_box'>
                 <div className='in_photo_box'>
-                    <div className='in_photo_box_photo_center'><img className='the_photo' src={"https://drive.google.com/uc?export=view&id="+props.selection.tag} alt="" /></div>
+                    <div className='in_photo_box_photo_center'><img className='the_photo' referrerPolicy="no-referrer" src={"https://f005.backblazeb2.com/file/PhotosSite/Site+Display/"+props.selection.tag} alt="" /></div>
                     <div className='the_photo_text'>
                         <div className='the_photo_name'>{props.selection.name}</div>
                         <div className='the_photo_info'>{props.selection.info}</div>

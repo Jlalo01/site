@@ -40,7 +40,7 @@ const Photos = () => {
                             }
                             return(
                                 <div className='a_photo'>
-                                    <img className='photo_fit' width={"100%"} height={"100%"} onClick={() => handleClick(element)} src={"https://drive.google.com/uc?export=view&id="+element.tag} alt={element.name} />
+                                    <img className='photo_fit' width={"100%"} height={"100%"} onClick={() => handleClick(element)} referrerPolicy="no-referrer" src={"https://f005.backblazeb2.com/file/PhotosSite/Site+Display/"+element.tag} alt={element.name} />
                                 </div>
                             );
                         })
