@@ -12,11 +12,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={ <HomePage /> } />
-        <Route path="/play/:tag" element={ <Play /> } />
-        <Route path="/photos" element={ <PhotosPage /> } />
-        <Route path="/:category" element={ <CategoryPage /> } />
-        <Route path="/wip" element={ <WIP /> } />
-        <Route path="/programming" element={ <ProgrammingPage /> } />
       </Routes>
     </Router>
   );
