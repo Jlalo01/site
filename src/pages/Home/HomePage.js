@@ -7,6 +7,7 @@ const HomePage = () =>{
     const navigate = useNavigate();
     useEffect(() => {
         console.log("hello there");
+        window.location.href = "https://www.mirumproductions.com/";
         navigate("https://www.mirumproductions.com/", {replace: true});
     },[])
     return (
